@@ -366,4 +366,4 @@ queda solo la decisión que el test no puede tomar.
 
 **Fuentes, según lleguen:**
 
-- 2026-09-08 — arranque: *Refactoring UI* + medidas de `oshisuki-mobile` (app en producción).
+- 2026-09-08 — arranque: *Refactoring UI* + medidas de oshisuki, mi app en producción.
