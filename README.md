@@ -8,6 +8,20 @@ mismo peso, grises que no se leen, espaciado ambiguo y ninguna acción principal
 que se conocen y aun así se repiten en el momento de decidir. Eso es lo que hay aquí, y solo
 eso: la skill no es una enciclopedia de Material ni la HIG entera.
 
+## Qué esperar de ella
+
+Es una ayuda, no una solución. Con la skill cargada, Claude deja de cometer los fallos que
+se repiten —todo con el mismo peso, grises ilegibles, espaciado ambiguo, ninguna acción
+principal—, pero de ahí no sale un buen diseño a la primera. Hace falta iterar: mirar el
+resultado, decir qué no funciona y volver a pasar. Lo que hace la skill es que cada
+iteración empiece más arriba, no que sobren las iteraciones.
+
+Tampoco sustituye al contexto de producto. Qué tiene que hacer el usuario en esa pantalla y
+qué dato es el importante no lo sabe ningún documento genérico: eso se lo das tú.
+
+La voy actualizando según veo qué errores se repiten, así que crece con el uso. Si te pasa
+uno que la skill no cubre, abre un issue con el caso.
+
 ## Instalación
 
 ```bash
