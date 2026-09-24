@@ -1,28 +1,27 @@
-# ui-design — una skill de Claude Code para las decisiones visuales de una pantalla
+# ui-design — a Claude Code skill for the visual decisions of a screen
 
-Cómo decidir jerarquía, tipografía, color, espaciado y profundidad, y cómo reparar lo que ya
-está mal. Vale para web y para móvil. Se usa **antes y mientras** se escribe UI, no después.
+How to decide hierarchy, type, color, spacing and depth, and how to repair what is already
+wrong. Works for web and mobile. It runs **before and while** writing UI, not after.
 
-La escribí porque un agente que diseña sin criterio produce pantallas planas: todo con el
-mismo peso, grises que no se leen, espaciado ambiguo y ninguna acción principal. Son fallos
-que se conocen y aun así se repiten en el momento de decidir. Eso es lo que hay aquí, y solo
-eso: la skill no es una enciclopedia de Material ni la HIG entera.
+I wrote it because an agent designing without judgment produces flat screens: everything at
+the same weight, grays that cannot be read, ambiguous spacing and no primary action. These
+are mistakes people know about and still repeat in the moment of deciding. That is what is in
+here, and only that: the skill is not an encyclopedia of Material or the whole HIG.
 
-## Qué esperar de ella
+## What to expect from it
 
-Es una ayuda, no una solución. Con la skill cargada, Claude deja de cometer los fallos que
-se repiten —todo con el mismo peso, grises ilegibles, espaciado ambiguo, ninguna acción
-principal—, pero de ahí no sale un buen diseño a la primera. Hace falta iterar: mirar el
-resultado, decir qué no funciona y volver a pasar. Lo que hace la skill es que cada
-iteración empiece más arriba, no que sobren las iteraciones.
+It is a help, not a solution. With the skill loaded, Claude stops making the mistakes that
+repeat, but a good design does not come out on the first try. You still have to iterate: look
+at the result, say what does not work, and run it again. What the skill does is make each
+iteration start higher up, not make iterations unnecessary.
 
-Tampoco sustituye al contexto de producto. Qué tiene que hacer el usuario en esa pantalla y
-qué dato es el importante no lo sabe ningún documento genérico: eso se lo das tú.
+It is no substitute for product context either. What the user has to do on that screen and
+which number matters is not something a generic document can know: you supply that.
 
-La voy actualizando según veo qué errores se repiten, así que crece con el uso. Si te pasa
-uno que la skill no cubre, abre un issue con el caso.
+I update it as I see which mistakes repeat, so it grows with use. If you hit one the skill
+does not cover, open an issue with the case.
 
-## Instalación
+## Install
 
 ```bash
 git clone https://github.com/jordisantamaria/claude-ui-design-skill
@@ -30,34 +29,30 @@ mkdir -p ~/.claude/skills/ui-design
 cp claude-ui-design-skill/SKILL.md ~/.claude/skills/ui-design/SKILL.md
 ```
 
-Se invoca con `/ui-design`, y Claude la carga solo cuando el trabajo es de UI.
+Invoke it with `/ui-design`. Claude also loads it on its own when the work is UI work.
 
-## Necesita un perfil por proyecto
+## It needs a per-project profile
 
-La skill lleva el **criterio**; los **datos** de cada proyecto (paleta, escala tipográfica,
-escala de espaciado, radios, utilidades que ya existen, qué está roto hoy) viven en un
-`ui-profile` aparte:
+The skill carries the **judgment**; each project's **data** (palette, type scale, spacing
+scale, radii, the utilities that already exist, what is broken today) lives in a separate
+`ui-profile`:
 
-- `<repo>/.claude/ui-profile.md` — el del proyecto
-- `~/.claude/ui-profiles/<nombre-del-repo>.md` — el personal, para repos de otros
+- `<repo>/.claude/ui-profile.md` — the project's own
+- `~/.claude/ui-profiles/<repo-name>.md` — the personal one, for other people's repos
 
-Sin perfil, Claude se inventa los tokens. El apartado 9 de la skill explica cómo escribirlo:
-midiendo lo que el proyecto usa de verdad, no suponiendo.
+With no profile, Claude invents the tokens. Section 9 of the skill explains how to write one:
+by measuring what the project actually uses, not by assuming.
 
-## Idioma
+## Origin
 
-El original está en español y es el que se mantiene. Claude lo entiende igual trabajando en
-cualquier idioma. Si alguien quiere una traducción, bienvenida por PR.
+The initial rules are a distillation of *Refactoring UI* (Adam Wathan and Steve Schoger),
+translated into instructions for an agent and calibrated against real measurements from
+oshisuki, my app in production. From there it is a living document: every new rule enters
+with a real case behind it. If a rule looks arguable, argue it against the screen in front of
+you.
 
-## Origen
+## License
 
-Las reglas iniciales son una destilación de *Refactoring UI* (Adam Wathan y Steve Schoger),
-traducidas a instrucciones para un agente y calibradas contra medidas reales de oshisuki, mi
-app en producción. A partir de ahí es un documento vivo: cada regla nueva entra con un caso
-real detrás. Si una regla te parece discutible, discútela con la pantalla que tengas delante.
-
-## Licencia
-
-[CC BY 4.0](LICENSE). Se puede usar y adaptar, también comercialmente, citando al autor:
+[CC BY 4.0](LICENSE). Free to use and adapt, commercially too, with attribution:
 
 > ui-design skill — Jordi Santamaria Portoles — https://github.com/jordisantamaria/claude-ui-design-skill

@@ -1,38 +1,39 @@
-# Contribuir y mantener la skill
+# Contributing and maintaining the skill
 
-Estas son las reglas con las que la skill crece. No van dentro de `SKILL.md` porque no
-ayudan a decidir nada al diseñar: solo ocuparían contexto en cada uso.
+These are the rules the skill grows by. They are not inside `SKILL.md` because they help
+nobody decide anything while designing: they would only take up context on every use.
 
-**De dónde salió el arranque.** Las reglas iniciales son una destilación de *Refactoring UI*
-(Adam Wathan y Steve Schoger), traducidas a código y calibradas contra medidas reales. Eso
-es el origen, no el límite: **esto no es «Refactoring UI»**, es un criterio de diseño propio
-que a partir de aquí crece por su cuenta. Una regla no vale más ni menos por venir de ese
-libro.
+**Where the starting point came from.** The initial rules are a distillation of *Refactoring
+UI* (Adam Wathan and Steve Schoger), translated into code and calibrated against real
+measurements. That is the origin, not the limit: **this is not "Refactoring UI"**, it is a
+design criterion of its own that grows independently from here. A rule is worth no more and
+no less for coming from that book.
 
-**Cómo entra una regla nueva.** Con un caso real detrás: una pantalla que salió mal, un
-comentario de quien la usa, algo que se rehízo dos veces. Al añadirla, apunta de dónde sale.
-Una regla que solo tiene una cita detrás y ningún caso todavía no se ha ganado el sitio.
+**How a new rule gets in.** With a real case behind it: a screen that came out wrong, a
+comment from somebody using it, something that was redone twice. When adding it, note where
+it comes from. A rule backed only by a quote and no case yet has not earned its place.
 
-**Aquí solo va lo universal.** Si una regla necesita nombrar un token, una clase o un
-fichero, no es de esta skill: es del perfil de ese proyecto. La prueba: ¿sirve igual en una
-app móvil de consumo y en una tabla de datos empresarial? Si no, va al perfil.
+**Only the universal goes here.** If a rule needs to name a token, a class or a file, it does
+not belong in this skill: it belongs in that project's profile. The test: does it hold
+equally for a consumer mobile app and for an enterprise data table? If not, it goes to the
+profile.
 
-**Y solo va lo que no se aplica solo.** Una skill no es una enciclopedia: es la lista de lo
-que se olvida aplicar en el momento de decidir. Antes de añadir algo, pregúntate en cuál de
-las tres cae:
+**And only what does not get applied on its own.** A skill is not an encyclopedia: it is the
+list of what people forget to apply in the moment of deciding. Before adding something, ask
+which of the three it falls into:
 
-- **Se consulta cuando hace falta** → fuera. La API de un componente, el catálogo de
-  Material, la HIG entera. Saberlo de memoria no mejora ninguna decisión.
-- **Se sabe pero no se aplica** → dentro. El área de toque de 44pt es el ejemplo: nadie la
-  desconoce, y aun así se incumple al dibujar un icono de 24px.
-- **Depende de una versión** → fuera, y con instrucción de mirarlo. Los tokens de Material,
-  los defaults de MUI, lo que cambió en la última iOS. Un número recordado de memoria y
-  dicho con seguridad hace más daño que no darlo.
+- **Looked up when needed** → out. A component's API, the Material catalog, the whole HIG.
+  Knowing it by heart improves no decision.
+- **Known but not applied** → in. The 44pt touch target is the example: nobody is unaware of
+  it, and it is still broken when drawing a 24px icon.
+- **Depends on a version** → out, with an instruction to look it up. Material tokens, MUI
+  defaults, whatever changed in the last iOS. A number recalled from memory and said with
+  confidence does more damage than no number.
 
-**Qué se quita.** Una regla que lleva meses sin que nadie la incumpla ya es un hábito y solo
-ocupa sitio. Y cuando una regla se pueda comprobar con un test, su sitio es el test; aquí se
-queda solo la decisión que el test no puede tomar.
+**What gets removed.** A rule nobody has broken for months is a habit already and only takes
+up room. And when a rule can be checked by a test, its place is the test; what stays here is
+the decision the test cannot make.
 
-**Fuentes, según lleguen:**
+**Sources, as they arrive:**
 
-- *Refactoring UI* — Adam Wathan y Steve Schoger.
+- *Refactoring UI* — Adam Wathan and Steve Schoger.
