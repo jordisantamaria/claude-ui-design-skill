@@ -23,7 +23,7 @@ de tocar nada:
 1. `<repo>/.claude/ui-profile.md` — el del proyecto
 2. `~/.claude/ui-profiles/<nombre-del-repo>.md` — el personal, para repos de otros
 
-**Si no hay perfil, no improvises tokens.** Mide primero (§9) y escribe el perfil: media
+**Si no hay perfil, no improvises tokens.** Mide primero (apartado 9) y escribe el perfil: media
 hora ahí evita meses de decisiones inventadas. Si el usuario tiene prisa, aplica solo lo
 que no depende de tokens —jerarquía y espaciado— y dilo.
 
