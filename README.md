@@ -52,9 +52,9 @@ cualquier idioma. Si alguien quiere una traducción, bienvenida por PR.
 ## Origen
 
 Las reglas iniciales son una destilación de *Refactoring UI* (Adam Wathan y Steve Schoger),
-traducidas a instrucciones para un agente y calibradas contra medidas reales de
-oshisuki, mi app en producción. A partir de ahí es un documento vivo: cada regla
-nueva entra con un caso real detrás. Si una regla te parece discutible, discútela con la pantalla que tengas delante.
+traducidas a instrucciones para un agente y calibradas contra medidas reales de oshisuki, mi
+app en producción. A partir de ahí es un documento vivo: cada regla nueva entra con un caso
+real detrás. Si una regla te parece discutible, discútela con la pantalla que tengas delante.
 
 ## Licencia
 
